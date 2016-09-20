@@ -1,0 +1,39 @@
+Actividad 16 - Trabajo: Desarrollo de una aplicación móvil en iOS
+Asignatura: Programación de aplicaciones móviles en iOS
+Profesor: Pablo Cruz Navea
+Alumno: Ricardo Vera Muñoz
+Fecha de entrega: 21 de Septiembre de 2016
+
+###############################################################################
+Consideraciones TEST
+###############################################################################
+Performance = Se investigo en el libro Swift 2 Design Patterns Pag 71 y Swift Recipes: A Problem-Solution Approach pag 88, sobre las pruebas de performance
+###############################################################################
+
+Prueba 1 testPerformanceUsuarios (Ordenamiento de usuarios(campo useru))
+baseline: 0.006
+
+Test Case '-[Trabajo16Tests.Trabajo16Tests testPerformanceUsuarios]' measured [Time, seconds] average: 0.000, relative standard deviation: 166.758%, values: [0.000279, 0.000024, 0.000016, 0.000016, 0.000015, 0.000024, 0.000026, 0.000026, 0.000025, 0.000015], performanceMetricID:com.apple.XCTPerformanceMetric_WallClockTime, baselineName: "Local Baseline", baselineAverage: 0.006, maxPercentRegression: 10.000%, maxPercentRelativeStandardDeviation: 1.000%, maxRegression: 0.100, maxStandardDeviation: 0.100
+------------------------------------------------------------------------------
+
+Prueba 1 "testPerformanceUsuarios" (Ordenamiento de usuarios(campo useru) + impresion usuarios)
+baseline: 0.006
+
+Test Case '-[Trabajo16Tests.Trabajo16Tests testPerformanceUsuarios]' measured [Time, seconds] average: 0.000, relative standard deviation: 96.254%, values: [0.000816, 0.000156, 0.000140, 0.000139, 0.000138, 0.000141, 0.000156, 0.000126, 0.000140, 0.000148], performanceMetricID:com.apple.XCTPerformanceMetric_WallClockTime, baselineName: "Local Baseline", baselineAverage: 0.006, maxPercentRegression: 10.000%, maxPercentRelativeStandardDeviation: 1.000%, maxRegression: 0.100, maxStandardDeviation: 0.100
+--------------------------------------------------------------------------------
+
+Prueba 2 testAddUsuario()
+
+Se agrega a un elemento en la lista de usuario, posicionandose en la posicion 0 del arreglo. Luego se se cargan los demas elementos en la lista y si el dato se encuentra en el arreglo, se corrobora con una assercion  XCTAssertEqual.
+
+--------------------------------------------------------------------------------
+
+Prueba 3 testAccesoLogin()
+
+Se comprueba con una asercion que existe un usuario valido, para poder identificarse en un formulario de identificacion de usuario.
+
+################################################################################
+
+GIT HUB
+repositorio : https://github.com/RVricardovera/actividad16.git
+
